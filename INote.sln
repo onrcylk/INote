@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INote.API", "INote.API\INote.API.csproj", "{5DCB309A-1952-4BEA-BD5B-02C6F0BDCE5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INote.API", "INote.API\INote.API.csproj", "{BB533C0E-69E0-49A7-BE13-23E1EE5B8FA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INote.UI", "INote.UI\INote.UI.csproj", "{CF1199E9-807A-42EC-A35A-2EC798CE7EBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INote.UI", "INote.UI\INote.UI.csproj", "{00F14AAF-5EAE-4C78-A5B3-65E3283AD636}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5DCB309A-1952-4BEA-BD5B-02C6F0BDCE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DCB309A-1952-4BEA-BD5B-02C6F0BDCE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DCB309A-1952-4BEA-BD5B-02C6F0BDCE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DCB309A-1952-4BEA-BD5B-02C6F0BDCE5B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF1199E9-807A-42EC-A35A-2EC798CE7EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF1199E9-807A-42EC-A35A-2EC798CE7EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF1199E9-807A-42EC-A35A-2EC798CE7EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF1199E9-807A-42EC-A35A-2EC798CE7EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB533C0E-69E0-49A7-BE13-23E1EE5B8FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB533C0E-69E0-49A7-BE13-23E1EE5B8FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB533C0E-69E0-49A7-BE13-23E1EE5B8FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB533C0E-69E0-49A7-BE13-23E1EE5B8FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F14AAF-5EAE-4C78-A5B3-65E3283AD636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F14AAF-5EAE-4C78-A5B3-65E3283AD636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F14AAF-5EAE-4C78-A5B3-65E3283AD636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F14AAF-5EAE-4C78-A5B3-65E3283AD636}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {69DEAD4C-A07C-48C4-AAF1-F6F3E76CE333}
+		SolutionGuid = {87A8CD6F-AAAF-4AB1-A6AB-809AE3B3179E}
 	EndGlobalSection
 EndGlobal

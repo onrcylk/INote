@@ -8,7 +8,7 @@ using System.Web;
 namespace INote.API.Models
 {
     [Table("Notes")]
-    public class INote
+    public class Note
     {
         public int Id { get; set; }
 
@@ -22,10 +22,11 @@ namespace INote.API.Models
 
         public string Content { get; set; }
 
-       
+        [Required]
         public DateTime? CreatedTime { get; set; }
 
         public DateTime? ModifiedTime { get; set; }
+
         public ApplicationUser Author { get; set; }
     }
 }
