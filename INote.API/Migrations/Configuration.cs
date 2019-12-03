@@ -25,8 +25,8 @@ namespace INote.API.Migrations
 
                 var user = new ApplicationUser
                 {
-                    UserName = "onrcylk1993@gmail.com",
-                    Email = "onrcylk1993@gmail.com",
+                    UserName = "yigith1@gmail.com",
+                    Email = "yigith1@gmail.com",
                     EmailConfirmed = true
                 };
 

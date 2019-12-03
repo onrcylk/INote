@@ -2,7 +2,7 @@
 
 var app = angular.module("myApp", ["ngRoute"]);
 
-app.controller("indexCtrl", function ($scope, $window, $http,$location) {
+app.controller("indexCtrl", function ($scope, $window, $http, $location) {
     $scope.isAuthenticated = false;
 
     $scope.token = function () {
@@ -54,17 +54,23 @@ app.controller("indexCtrl", function ($scope, $window, $http,$location) {
             $scope.loggedInUserEmail = null;
         }
     };
-    $scope.logout = function () {
+
+    $scope.logout = function (e) {
+        e.preventDefault();
+
         $scope.setLoggedInUser(null);
+
         $http.post(apiUrl + "api/Account/Logout", null, $scope.requestConfig()).then(
             function (response) {
-                $window.sessionStorage.removeItem("token");
-                $window.localStorage.removeItem("token");
-                $location.path("login");
+
             }
         );
 
-    }
+        $window.sessionStorage.removeItem("token");
+        $window.localStorage.removeItem("token");
+        $location.path("login");
+    };
+
     $scope.checkAuthentication();
 });
 
@@ -85,8 +91,8 @@ app.controller("mainCtrl", function ($scope, $http, $window, $location) {
     if (!$scope.token()) {
         $location.path("login");
         return;
-
     }
+
     $scope.selectedNote = null;
     $scope.activeNote = {
         Id: 0,
@@ -105,7 +111,6 @@ app.controller("mainCtrl", function ($scope, $http, $window, $location) {
             function (response) {
                 if (response.status == 401) {
                     $location.path("login");
-
                 }
             }
         );
@@ -115,9 +120,11 @@ app.controller("mainCtrl", function ($scope, $http, $window, $location) {
         e.preventDefault();
         $scope.activeNote = angular.copy(note);
         $scope.selectedNote = note;
-
     };
+
     $scope.saveNote = function (e) {
+        e.preventDefault();
+
         if ($scope.activeNote.Id !== 0) {
             $http.put(apiUrl + "api/Notes/PutNote/" + $scope.activeNote.Id, $scope.activeNote, $scope.requestConfig()).then(
                 function (response) {
@@ -130,22 +137,22 @@ app.controller("mainCtrl", function ($scope, $http, $window, $location) {
 
                 },
             );
-
         }
     };
+
     $scope.deleteNote = function (e) {
 
     };
+
     $scope.noteActiveClass = function (id) {
         if ($scope.selectedNote == null) {
             return "";
-
         }
+
         return $scope.selectedNote.Id == id ? "active" : "";
     };
+
     $scope.loadNotes();
-
-
 });
 
 app.controller("loginCtrl", function ($scope, $http, $location, $timeout, $httpParamSerializer, $window) {
@@ -158,7 +165,7 @@ app.controller("loginCtrl", function ($scope, $http, $location, $timeout, $httpP
 
     $scope.user = {
         grant_type: "password",
-        username: "onrcylk1993@gmail.com",
+        username: "yigith1@gmail.com",
         password: "Ankara1."
     };
 
